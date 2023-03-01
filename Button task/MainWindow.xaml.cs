@@ -26,25 +26,28 @@ namespace Button_task
             InitializeComponent();
         }
         private void Button_PreviewMouseDown(object sender, MouseButtonEventArgs e)
-    if (e.LeftButton == MouseButtonState.Pressed) {
-        Debug.Print("Left");
-    }
-    else {
-        Debug.Print("Right");
-    }
-}
+        {
+            if (e.RightButton == MouseButtonState.Pressed)
+            {
+                b1.Width = 1;
+                b1.Height= 1;   
+            }
+        }
+       
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-
-
             Random r = new Random();
-            Brush brush = new SolidColorBrush(Color.FromRgb((byte)r.Next(1, 255),(byte)r.Next(1, 255), (byte)r.Next(1, 233)));
+            Brush brush = new SolidColorBrush(Color.FromRgb((byte)r.Next(1, 255), (byte)r.Next(1, 255), (byte)r.Next(1, 233)));
             color.Background = brush;
-            
+ 
+
             MessageBox.Show("it is your new Color");
-
-
         }
     }
+
+
+
+
+
 }
