@@ -12,12 +12,10 @@
             <Button Name="b2" Canvas.Top="20" Canvas.Left="300" Height="100" Width="150" Content="2" FontSize="40" Background="Pink" Click="Button_Click" PreviewMouseDown="Button_PreviewMouseDown"></Button>
             <Button Name="b3" Canvas.Top="20" Canvas.Left="500" Height="100" Width="150"  Click="Button_Click" Content="3" FontSize="40" Background="SkyBlue" PreviewMouseDown="Button_PreviewMouseDown"></Button>
             <Button Name="b4" Canvas.Bottom="20" Canvas.Left="100" Height="100" Width="150" Content="4" FontSize="40" Background="Red"  Click="Button_Click" PreviewMouseDown="Button_PreviewMouseDown" ></Button>
-            <Button Name="b4" Canvas.Bottom="20" Canvas.Left="100" Height="100" Width="150" Content="4" FontSize="40" Background="Red"  Click="Button_Click" PreviewMouseDown="Button_PreviewMouseDown" ></Button>
             <Button Name="b5" Canvas.Bottom="20" Canvas.Left="300" Height="100" Width="150" Content="5" FontSize="40" Background="#7D0790" Click="Button_Click"  ></Button>
-            <Button Name="b4" Canvas.Bottom="20" Canvas.Left="100" Height="100" Width="150" Content="4" FontSize="40" Background="Red"  Click="Button_Click" PreviewMouseDown="Button_PreviewMouseDown" ></Button>
+     
             <Button Name="b6" Canvas.Bottom="20" Canvas.Left="500" Height="100" Width="150" Content="6" FontSize="40" Background="#99959A" Click="Button_Click" ></Button>
         </Canvas>
-
 
 
 
