@@ -29,20 +29,37 @@ namespace Button_task
         {
             if (e.RightButton == MouseButtonState.Pressed)
             {
-                b1.Width = 1;
-                b1.Height= 1;   
+                Width = 1;
+                Height= 1;   
+            }
+            else
+            {
+                            Random r = new Random();
+            Brush brush = new SolidColorBrush(Color.FromRgb((byte)r.Next(1, 255), (byte)r.Next(1, 255), (byte)r.Next(1, 233)));
+            color.Background = brush;
+ 
+
+            MessageBox.Show("it is your new Color");
             }
         }
        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Random r = new Random();
-            Brush brush = new SolidColorBrush(Color.FromRgb((byte)r.Next(1, 255), (byte)r.Next(1, 255), (byte)r.Next(1, 233)));
-            color.Background = brush;
- 
+            if (e.RightButton == MouseButtonState.Pressed)
+            {
+                Width = 1;
+                Height = 1;
+            }
+            else
+            {
+                Random r = new Random();
+                Brush brush = new SolidColorBrush(Color.FromRgb((byte)r.Next(1, 255), (byte)r.Next(1, 255), (byte)r.Next(1, 233)));
+                color.Background = brush;
 
-            MessageBox.Show("it is your new Color");
+
+                MessageBox.Show("it is your new Color");
+            }
         }
     }
 
